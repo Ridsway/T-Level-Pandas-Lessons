@@ -16,10 +16,11 @@ print("look at the first 25 entries")
 #Your code goes here:
 
 print("#"*10)
-input()
+print(df.head(25))
 
 print("step 5")
 print("look at the last 10 entries")
+print(df.tail(10))
 
 #Your code goes here:
 

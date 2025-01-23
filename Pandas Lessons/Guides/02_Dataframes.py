@@ -13,13 +13,13 @@ print(df)
 print("#"*10)
 input()
 
-print("you can make a copy of a dataframe")
+print("you can make a copy of a dataframe")     # make copy of dataframe
 newDf = df.copy()
 print(newDf)
 print("#"*10)
 input()
 
-print("you can change the copy and it won't change the original")
+print("you can change the copy and it won't change the original")   # can change the copy and original won't be affected
 newDf["five"] = "5000"
 print("copy: ")
 print(newDf)
@@ -28,13 +28,13 @@ print(df)
 print("#"*10)
 input()
 
-print("you can change the data type of a column by using its name")
+print("you can change the data type of a column by using its name") # change the datatype of a specific column by using its name
 print(df.two.astype(int))
 print(df.three.astype(int))
 print("#"*10)
 input()
 
-print("you can transpose the dataframe using .T")
+print("you can transpose the dataframe using .T") # swap rows and column values
 print("this swaps the rows and columns")
 print(df.T)
 print("#"*10)
@@ -45,30 +45,31 @@ print("top using .head()")
 print("the number in the brackets decides how many rows to show")
 print(df.head(2))
 print("#"*10)
-input()
+input()             # get rows from top using .head(), put number in brackets for how many rows from the top to show
+                    # this can also be done from the bottom using .tail()
 
 print("you can print all of the information about the dataFrame using .info()")
 print(df.info())
 print("#"*10)
-input()
+input()             # print all info of dataFrame using ".info()"
 
 print("you can print a description of every column in the dataFrame using .describe()")
 print(df.describe(include="all"))
 print("#"*10)
-input()
+input()             # print a description of every column in the dataFrame (in this case it shows the minimum, frequency, etc.)
 
 print("you can add columns to a dataFrame using iteration")
 for i in range(20):
     df[f"column {i}"] = i
 print(df)
 print("#"*10)
-input()
+input()             # add columns through iteration 
 
 print("when you have this many columns, transposing can help you")
 print("view them all in the console")
 print(df.T)
 print("#"*10)
-input()
+input()         # swapping the rows and columns helps when you have many columns
 
 
 #This section no longer works! VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
